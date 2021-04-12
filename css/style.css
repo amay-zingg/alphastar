@@ -14,7 +14,9 @@ p {
 }
 
 .container {
-    width: 1140px;
+    /* width: 1140px; */
+    width: 900px;
+    padding: 1em; 
     margin: 0 auto;
 }
 
@@ -253,6 +255,7 @@ hgroup {
 
 .cogSection hgroup h3 {
     margin-top: 8px;    
+    padding: 0 6em;
 }
 
 .cogTwoCols {
@@ -325,3 +328,72 @@ hgroup {
 /* .serviceBoxInner h2 {
 
 } */
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #hero h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .fourColSection {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .fourColContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blueDividerLine{
+        margin: 1em 0;
+    }
+
+    .fourColItem{
+        width: 250px;
+        margin: 1em 0;
+    }
+
+    .services {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .serviceBox {
+        overflow: visible;
+        flex: none;
+        background-repeat: no-repeat;
+        width: 400px;
+    }
+
+    .cogTwoCols {
+        flex-direction: column-reverse;
+    }
+
+    .cogImageCol {
+        padding-top: 0;
+    }
+
+    .cogContainer{
+        height: 300px;
+    }
+
+    .cogLeft, .cogRight{
+        width: 150px;
+    }
+
+    .cogLeft{
+        top: 10px;
+    }
+
+    .cogRight{
+        left: 190px;
+        top: 100px;
+    }
+}
